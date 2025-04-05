@@ -1,0 +1,14 @@
+.notfound-container {
+  text-align: center; /* Centra tutto il contenuto all’interno del contenitore */
+  padding: 2rem; /* Spazio interno uniforme su tutti i lati */
+}
+
+.notfound-title {
+  font-size: 3rem; /* Titolo molto grande, per enfasi */
+  margin-top: 2rem; /* Spazio sopra il titolo */
+  color: var(--color-error); /* Colore del testo */
+}
+
+.notfound-text {
+  margin: var(--padding-md) 0; /* Spazio sopra e sotto il paragrafo, nessun margine ai lati */
+}

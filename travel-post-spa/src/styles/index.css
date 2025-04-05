@@ -1,0 +1,115 @@
+:root {
+  /* Font */
+  --font-family-base: Arial, sans-serif;
+
+  /* Colori */
+  --color-primary: #ff8c00; /* Arancione chiaro */
+  --color-primary-dark: #e03d00; /* Arancione scuro */
+  --color-secondary: #333333; /* Grigio scuro */
+  --color-grey-light: #cccccc; /* Grigio molto chiaro */
+  --color-grey-dark: #666666; /* Grigio */
+  --color-light: #f0f0f0; /* Bianco */
+  --color-dark: #0f0f0f; /* Nero */
+  --color-neutral: #c0c0c0;  /* Grigio chiaro */
+  --color-error: #ff0000; /* Rosso */
+
+  /* Spaziature */
+  --padding-sm: 0.5rem; /* Spaziatura piccola */
+  --padding-md: 1rem; /* Spaziatura media */
+  --padding-lg: 1.5rem; /* Spaziatura grande */
+
+  /* Border & Shadow */
+  --radius-five: 5px; /* bordo leggermente arrotondato */
+  --radius-eight: 8px; /* bordo più arrotondato */
+  --shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombra leggera per dare profondità */
+}
+
+body {
+  margin: 0; /* Rimuove margini di default del body */
+  padding: 0; /* Rimuove padding di default del body */
+  box-sizing: border-box; /* Applica il box-sizing corretto agli elementi */
+  font-family: var(--font-family-base); /* Font */
+  background-color: var(--color-secondary); /* Colore di sfondo */
+  color: var(--color-light); /* Colore del testo */
+  overflow-x: hidden; /* Previene lo scroll orizzontale indesiderato */
+}
+
+a {
+  text-decoration: none; /* Rimuove il sottolineato dei link */
+  color: inherit; /* I link ereditano il colore del genitore */
+}
+
+a:focus,
+button:focus {
+  outline: 2px dashed var(--color-light); /* Stile accessibile per focus */
+  outline-offset: 3px; /* Distanza tra bordo e outline */
+}
+
+button {
+  font-weight: 600; /* Testo in grassetto nei bottoni */
+  cursor: pointer; /* Cursore a mano per indicare cliccabilità */
+  padding: var(--padding-sm) var(--padding-md); /* Padding orizzontale e verticale */
+  border: none; /* Nessun bordo di default */
+  border-radius: var(--radius-five); /* Angoli leggermente arrotondati */
+  background-color: var(--color-primary); /* Colore di sfondo */
+  color: var(--color-light); /* Colore del testo */
+  transition: background-color 0.3s; /* Transizione al passaggio del mouse */
+}
+
+button:hover {
+  background-color: var(--color-primary-dark); /* Cambia colore di sfondo all'hover */
+}
+
+h1,
+h2 {
+  margin-bottom: 0.5rem; /* Spazio inferiore standard per titoli */
+}
+
+p {
+  line-height: 1.6; /* Migliora la leggibilità dei paragrafi */
+}
+
+.container-center {
+  display: flex; /* Layout flessibile verticale */
+  flex-direction: column;
+  align-items: center; /* Centra orizzontalmente gli elementi */
+  padding: 2rem; /* Spazio interno su tutti i lati */
+}
+
+.boxed {
+  background-color: var(--color-neutral); /* Colore di sfondo */
+  padding: var(--padding-lg); /* Spazio interno abbondante */
+  border-radius: var(--radius-eight); /* Angoli arrotondati marcati */
+  border: 1px solid var(--color-primary-dark); /* Bordo */
+  box-shadow: var(--shadow); /* Ombreggiatura */
+}
+
+/* Per contenuti centrati e con larghezza massima controllata, es. form */
+.boxed-narrow {
+  width: 100%; /* Occupa tutta la larghezza disponibile */
+  max-width: 800px; /* Ma non supera gli 800px */
+}
+
+.btn {
+  padding: var(--padding-sm) var(--padding-md); /* Padding */
+  border: none; /* Niente bordo */
+  border-radius: var(--radius-five); /* Colore di sfondo */
+  font-weight: 600; /* Testo in grassetto */
+  cursor: pointer; /* Cursore che diventa un puntatore */
+  transition: background-color 0.3s; /* Transizione del colore di sfondo */
+  text-decoration: none; /* Nessuna decorazione del testo */
+  display: inline-block; /* display blocco in linea */
+}
+
+.btn-orange {
+  background-color: var(--color-primary); /* Colore di sfondo */
+  color: var(--color-light); /* Colore del testo */
+}
+
+.btn-orange:hover {
+  background-color: var(--color-primary-dark); /* Colore di sfondo */
+}
+
+.back-button {
+  margin-top: var(--padding-md); /* Spazio superiore per il pulsante indietro */
+}

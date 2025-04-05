@@ -1,0 +1,23 @@
+.mytrips-header {
+  display: flex; /* Disposizione orizzontale tra titolo e pulsante */
+  justify-content: space-between; /* Spazio massimo tra i due elementi */
+  align-items: center; /* Allineamento verticale centrato */
+  margin-bottom: var(--padding-md); /* Spazio sotto l'intestazione */
+}
+
+.mytrips-title,
+.mytrips-paragraph {
+  text-align: left; /* Allinea il testo a sinistra */
+  margin-left: 0; /* Rimuove eventuali margini aggiuntivi indesiderati */
+}
+
+.mytrips-title {
+  color: var(--color-primary); /* Colore del testo */
+}
+
+.mytrips-grid {
+  display: grid; /* Layout a griglia per le card dei viaggi */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo: colonne flessibili di almeno 250px */
+  gap: var(--padding-md); /* Spazio tra le card */
+  align-items: start; /* Allinea gli elementi in alto per evitare disallineamenti */
+}

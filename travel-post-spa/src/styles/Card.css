@@ -1,0 +1,25 @@
+.zoom {
+  transition: transform 0.2s; /* Applica una transizione fluida al ridimensionamento */
+}
+
+.zoom:hover {
+  transform: scale(1.02); /* Leggero zoom sul contenitore al passaggio del mouse */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Dimensione del font */
+  margin-bottom: var(--padding-sm); /* Spazio inferiore tra titolo e sottotitolo */
+  color: var(--color-primary-dark); /* Colore del testo */
+}
+
+.card-subtitle,
+.card-visited {
+  color: var(--color-dark);  /* Colore del testo */
+}
+
+.card-image {
+  width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+  height: 200px; /* Altezza fissa */
+  object-fit: cover; /* Taglia e adatta l’immagine per coprire il contenitore */
+  border-radius: var(--radius-five); /* Angoli leggermente arrotondati */
+}

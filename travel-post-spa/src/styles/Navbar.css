@@ -1,0 +1,69 @@
+.navbar {
+  display: flex; /* Layout flessibile per disposizione orizzontale */
+  justify-content: center; /* Centra orizzontalmente gli elementi */
+  align-items: center; /* Centra verticalmente */
+  background-color: var(--color-primary); /* Colore di sfondo */
+  padding: var(--padding-md); /* Spazio interno */
+  color: var(--color-light); /* Colore del testo */
+  position: relative; /* Permette di posizionare elementi figli in assoluto */
+}
+
+.navbar-links {
+  display: flex; /* Disposizione orizzontale dei link */
+  gap: var(--padding-md); /* Spazio tra i link */
+}
+
+.navbar-links a {
+  font-weight: 600; /* Testo in grassetto */
+  padding: var(--padding-sm) var(--padding-md); /* Spaziatura interna */
+  background-color: var(--color-light); /* Colore dello sfondo */
+  color: var(--color-primary); /* Colore del testo */
+  border-radius: var(--radius-five); /* Arrotondamento dei bordi */
+  transition: background-color 0.3s, color 0.3s; /* Transizione fluida su hover del colore di sfondo e del colore del testo */
+}
+
+/* Stile per l'hover sui pulsanti */
+.navbar-links a:hover {
+  background-color: var(--color-primary-dark); /* Colore di sfondo */
+  color: var(--color-light); /* Colore del testo */
+}
+
+/* Stile per il pulsante attivo */
+.navbar-links .active {
+  background-color: var(--color-primary-dark); /* Colore di sfondo */
+  color: var(--color-light); /* Colore del testo */
+}
+
+.navbar-toggle {
+  display: none; /* Nasconde il bottone toggle su desktop */
+}
+
+/* MEDIA QUERY: dispositivi mobili con larghezza ≤ 600px */
+@media (max-width: 600px) {
+  .navbar-links {
+    display: none; /* Nasconde i link inizialmente */
+    position: absolute; /* Posizione assoluta sotto la navbar */
+    top: 100%; /* Posizionato subito sotto la navbar */
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary); /* Colore di sfondo */
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra i link */
+    padding: var(--padding-md); /* Spaziatura interna */
+  }
+
+  .navbar-links.open {
+    display: flex; /* Mostra i link quando il menu è aperto */
+  }
+
+  .navbar-toggle {
+    display: block; /* Mostra l’icona del menu hamburger */
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    width: 30px; /* Dimensione dell’icona hamburger */
+    height: 30px; /* Dimensione dell’icona hamburger */
+    color: var(--color-light); /* Colore */
+  }
+}

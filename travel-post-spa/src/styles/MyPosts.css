@@ -1,0 +1,22 @@
+.myposts-header {
+  display: flex; /* Disposizione orizzontale tra titolo e pulsante */
+  justify-content: space-between; /* Spazio massimo tra gli elementi (titolo a sx, bottone a dx) */
+  align-items: center; /* Allineamento verticale al centro */
+  margin-bottom: var(--padding-md); /* Spazio inferiore sotto l’header */
+}
+
+.myposts-title,
+.myposts-paragraph {
+  text-align: left; /* Allinea il testo a sinistra */
+  margin-left: 0; /* Rimuove eventuali margini aggiuntivi indesiderati */
+}
+
+.myposts-title {
+  color: var(--color-primary); /* Colore del testo */
+}
+
+.myposts-grid {
+  display: grid; /* Layout a griglia per le card dei post */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo: tante colonne da almeno 250px */
+  gap: var(--padding-md); /* Spazio tra le card */
+}

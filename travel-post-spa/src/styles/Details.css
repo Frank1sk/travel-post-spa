@@ -1,0 +1,27 @@
+.details-title {
+  color: var(--color-primary-dark); /* Colore del testo */
+}
+
+.details-subtitle,
+.details-content,
+.details-visited,
+.details-country {
+  color: var(--color-dark); /* Colore del testo */
+}
+
+.details-date {
+  color: var(--color-grey-dark); /* Colore del testo */
+}
+
+.details-image {
+  width: 100%; /* L'immagine si adatta alla larghezza del contenitore */
+  border-radius: var(--radius-eight); /* Angoli arrotondati più evidenti */
+  object-fit: cover; /* L'immagine viene ritagliata per riempire mantenendo le proporzioni */
+  margin-bottom: var(--padding-md); /* Spazio sotto l'immagine per separarla dal contenuto */
+}
+
+.details-buttons {
+  display: flex; /* Disposizione dei pulsanti in riga */
+  gap: var(--padding-md); /* Spazio tra i pulsanti */
+  margin-top: var(--padding-md); /* Spazio sopra il blocco pulsanti */
+}

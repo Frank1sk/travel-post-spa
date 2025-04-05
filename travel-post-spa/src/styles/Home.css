@@ -1,0 +1,41 @@
+.home-wrapper {
+  justify-content: center; /* Centra il contenuto orizzontalmente all’interno di un contenitore flessibile */
+}
+
+.home-title,
+.home-paragraph {
+  text-align: center; /* Centra il testo */
+}
+
+.home-title {
+  margin-top: 2rem; /* Spazio sopra il titolo */
+  color: var(--color-primary); /* Colore arancione principale */
+}
+
+.home-paragraph {
+  margin: var(--padding-md) 0; /* Spazio sopra e sotto il paragrafo */
+  color: var(--color-light); /* Colore del testo */
+}
+
+.home-description {
+  margin-top: 2rem; /* Spazio sopra il blocco descrizione */
+}
+
+.home-description-title {
+  color: var(--color-primary-dark); /* Colore del testo */
+  margin-bottom: var(--padding-sm); /* Spazio sotto il titolo */
+}
+
+.home-description-subtitle {
+  color: var(--color-primary-dark); /* Colore del testo */
+  margin-top: var(--padding-md); /* Spazio sopra il sottotitolo */
+}
+
+.home-description-paragraph,
+.home-description-list {
+  color: var(--color-dark); /* Colore del testo */
+}
+
+.home-description-list {
+  padding-left: var(--padding-lg); /* Rientro a sinistra per la lista puntata */
+}

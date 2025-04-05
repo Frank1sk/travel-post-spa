@@ -1,0 +1,28 @@
+.form-buttons {
+  display: flex; /* Disposizione orizzontale dei pulsanti */
+  gap: var(--padding-md); /* Spazio tra i pulsanti */
+  margin-top: var(--padding-md); /* Spazio sopra il gruppo di pulsanti */
+}
+
+.form-title {
+  color: var(--color-primary-dark); /* Colore del testo */
+}
+
+.form-label {
+  color: var(--color-dark); /* Colore del testo */
+}
+
+input,
+textarea {
+  width: 100%; /* I campi occupano tutta la larghezza disponibile */
+  padding: var(--padding-sm); /* Spaziatura interna */
+  margin-top: var(--padding-sm); /* Spazio sopra il campo */
+  margin-bottom: var(--padding-md); /* Spazio sotto il campo */
+  border: 1px solid var(--color-grey-light); /* Bordo grigio chiaro */
+  border-radius: var(--radius-five); /* Angoli leggermente arrotondati */
+}
+
+textarea {
+  height: 200px; /* Altezza fissa iniziale */
+  resize: vertical; /* L'utente può ridimensionare solo in verticale */
+}

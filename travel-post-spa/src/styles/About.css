@@ -1,0 +1,29 @@
+#about-container {
+  padding: 2rem; /* Spazio interno su tutti i lati del contenitore principale */
+  display: grid; /* Imposta un layout a griglia per organizzare il contenuto */
+  grid-template-columns: 1fr; /* Una sola colonna, responsiva per layout semplice */
+  gap: 2rem; /* Spazio tra gli elementi figli del grid */
+  color: var(--color-secondary); /* Colore del testo */
+}
+
+#about-header {
+  display: flex; /* Disposizione orizzontale dei suoi figli (es. immagine + titolo) */
+  align-items: center; /* Allinea verticalmente al centro gli elementi all'interno */
+  gap: var(--padding-lg); /* Spazio orizzontale tra immagine e testo */
+}
+
+#profile-image {
+  width: 150px; /* Larghezza fissa dell'immagine */
+  height: 150px; /* Altezza fissa per mantenerla quadrata */
+  border-radius: 50%; /* Rende l'immagine perfettamente rotonda */
+  object-fit: cover; /* Scala l'immagine per riempire il box mantenendo il rapporto */
+}
+
+#about-content {
+  display: grid; /* Disposizione a griglia del contenuto testuale */
+  gap: var(--padding-lg); /* Spazio tra le sezioni del contenuto */
+}
+
+.title {
+  color: var(--color-primary-dark); /* Colore del titolo preso dalla variabile globale */
+}

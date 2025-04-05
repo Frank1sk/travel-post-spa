@@ -1,0 +1,15 @@
+.app {
+  display: flex; /* Imposta il layout principale a colonna */
+  flex-direction: column; /* Gli elementi figli (es. navbar, contenuto, footer) si dispongono verticalmente */
+  min-height: 100vh; /* L'altezza minima è pari all'altezza della finestra, per coprire tutto lo schermo */
+}
+
+.outlet-wrapper {
+  padding: var(--padding-md); /* Spaziatura interna */
+  flex-grow: 1; /* Il contenuto prende tutto lo spazio verticale disponibile tra header e footer */
+}
+
+footer {
+  background-color: var(--color-primary-dark); /* Colore di sfondo */
+  height: 60px; /* Altezza fissa del footer */
+}
